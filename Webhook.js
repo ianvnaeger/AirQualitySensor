@@ -24,7 +24,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   // Contexts are objects used to track and store conversation state
   const inputContexts = request.body.result.contexts; // https://dialogflow.com/docs/contexts
 
-  const authHeader = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlkeXBiQG1haWwubWlzc291cmkuZWR1IiwiZmlyc3RfbmFtZSI6Illpemh1byIsImxhc3RfbmFtZSI6IkR1Iiwic2NvcGUiOlsic2VsZiJdLCJ1c2VyX2lkIjoiMTAzMjUzMzMiLCJpYXQiOjE1MjE0Njc2NDMsImV4cCI6MTUyMjc2MzY0MywiYXVkIjoibXlkZXZpY2VzLmNheWVubmUucHJvZCIsImlzcyI6Im15ZGV2aWNlcy5hc2dhcmQucHJvZCIsImp0aSI6IjRiZTBmYTQwLTRlODctNDBkMC1iMTMyLWM3NGU2YThjM2Q5MyJ9.whrmpl6-39qBWgRkKi8x9H0tTx5nb4buMG7aWlVQBts";
+  const authHeader = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InlkeXBiQG1haWwubWlzc291cmkuZWR1IiwiZmlyc3RfbmFtZSI6Illpemh1byIsImxhc3RfbmFtZSI6IkR1Iiwic2NvcGUiOlsic2VsZiJdLCJ1c2VyX2lkIjoiMTAzMjUzMzMiLCJpYXQiOjE1MjI5MDU4ODUsImV4cCI6MTUyNDIwMTg4NSwiYXVkIjoibXlkZXZpY2VzLmNheWVubmUucHJvZCIsImlzcyI6Im15ZGV2aWNlcy5hc2dhcmQucHJvZCIsImp0aSI6ImM1ZjEwY2Q5LTJmNWUtNDI3Mi1iZThlLWNlNmUwMjJjYTliNCJ9.LjL9U2R-amhDPQwlmrGWhW9yksLyEqmW9ZjRPv2tM8E";
   //+ apiAuthToken;
 
   // Get the request source (Google Assistant, Slack, API, etc) and initialize DialogflowApp
@@ -39,7 +39,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   
   var optionsChannel0 = {
     host: 'platform.mydevices.com',
-    path: '/v1.1/telemetry/b4563110-1cc6-11e8-9beb-4d400e603e7e/sensors/28f57f70-1ceb-11e8-a21e-7395420787ce/summaries?type=latest',
+    path: '/v1.1/telemetry/07f46230-3930-11e8-8d26-a9f2d7c18bc5/sensors/9bd8d660-3931-11e8-ab82-a3edb533e078/summaries?type=latest',
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -47,12 +47,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         'X-API-Version': '1.0'
     }
   };
-  //28f57f70-1ceb-11e8-a21e-7395420787ce
+  //9bd8d660-3931-11e8-ab82-a3edb533e078
   //^^^For channel 0
 
   var optionsChannel1 = {
     host: 'platform.mydevices.com',
-    path: '/v1.1/telemetry/b4563110-1cc6-11e8-9beb-4d400e603e7e/sensors/dcb3b190-2159-11e8-aeac-8375e928efd4/summaries?type=latest',
+    path: '/v1.1/telemetry/07f46230-3930-11e8-8d26-a9f2d7c18bc5/sensors/b783d090-3931-11e8-ab82-a3edb533e078/summaries?type=latest',
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -60,12 +60,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         'X-API-Version': '1.0'
     }
   };
-  //dcb3b190-2159-11e8-aeac-8375e928efd4
+  //b783d090-3931-11e8-ab82-a3edb533e078
   //^^^For channel 1
 
   var optionsChannel2 = {
     host: 'platform.mydevices.com',
-    path: '/v1.1/telemetry/b4563110-1cc6-11e8-9beb-4d400e603e7e/sensors/dd7ec9c0-2159-11e8-ac80-85ded0fe5d33/summaries?type=latest',
+    path: '/v1.1/telemetry/07f46230-3930-11e8-8d26-a9f2d7c18bc5/sensors/5bb68870-3931-11e8-ac80-85ded0fe5d33/summaries?type=latest',
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -73,12 +73,12 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         'X-API-Version': '1.0'
     }
   };
-  //dd7ec9c0-2159-11e8-ac80-85ded0fe5d33
+  //5bb68870-3931-11e8-ac80-85ded0fe5d33
   //^^^For channel 2
 
   var optionsChannel3 = {
     host: 'platform.mydevices.com',
-    path: '/v1.1/telemetry/b4563110-1cc6-11e8-9beb-4d400e603e7e/sensors/df3d69b0-2159-11e8-b6d4-35a0ad51f849/summaries?type=latest',
+    path: '/v1.1/telemetry/07f46230-3930-11e8-8d26-a9f2d7c18bc5/sensors/5e007870-3931-11e8-9beb-4d400e603e7e/summaries?type=latest',
     method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -86,8 +86,21 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
         'X-API-Version': '1.0'
     }
   };
-  //df3d69b0-2159-11e8-b6d4-35a0ad51f849
+  //5e007870-3931-11e8-9beb-4d400e603e7e
   //^^^For channel 3
+
+  var optionsChannel4 = {
+    host: 'platform.mydevices.com',
+    path: '/v1.1/telemetry/07f46230-3930-11e8-8d26-a9f2d7c18bc5/sensors/7ae467d0-3931-11e8-b59c-db84183bf26b/summaries?type=latest',
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': authHeader,
+        'X-API-Version': '1.0'
+    }
+  };
+  //7ae467d0-3931-11e8-b59c-db84183bf26b
+  //^^^For channel 4
 
   // Create handlers for Dialogflow actions as well as a 'default' handler
   const actionHandlers = {
@@ -95,16 +108,16 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     'input.welcome': () => {
       // Use the Actions on Google lib to respond to Google requests; for other requests use JSON
       if (requestSource === googleAssistantRequest) {
-        sendGoogleResponse('Hello, Welcome to our Air Quality Sensor AI helper!'); // Send simple response to user
+        sendGoogleResponse('Hello, Welcome to our Air Quality Sensor AI helper! How may I help you?'); // Send simple response to user
       } else {
-        sendResponse('Hello, Welcome to our Air Quality Sensor AI helper!'); // Send simple response to user
+        sendResponse('Hello, Welcome to our Air Quality Sensor AI helper! How may I help you?'); // Send simple response to user
       }
     },
     'input.air': () => { //Under Construction!!!
       //Model for what to change on others, in case you forget
       //Air will probably be a rating that you will want to give to the user
       if (requestSource === googleAssistantRequest) {
-        https.get(optionsChannel2, (res) => { //change options to optionsChannelX
+        https.get(optionsChannel1, (res) => { //change options to optionsChannelX
           var rawData = '';
           res.on('data', (chunk) => { rawData += chunk; });
           res.on('end', () => {
@@ -123,7 +136,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
           });
         }); //Repeat changes for the else case
       } else {
-        https.get(optionsChannel2, (res) => {
+        https.get(optionsChannel1, (res) => {
             var rawData = '';
             res.on('data', (chunk) => { rawData += chunk; });
             res.on('end', () => {
@@ -142,10 +155,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
           });
       }
     },
-    'input.carbon': () => { //Under Construction!!!
-      //Carbon will probably just be a boolean for safe/unsafe
-       if (requestSource === googleAssistantRequest) {
-        https.get(optionsChannel3, (res) => {
+    'input.alcohol': () => { //Under Construction!!!
+      //Model for what to change on others, in case you forget
+      //Air will probably be a rating that you will want to give to the user
+      if (requestSource === googleAssistantRequest) {
+        https.get(optionsChannel1, (res) => { //change options to optionsChannelX
           var rawData = '';
           res.on('data', (chunk) => { rawData += chunk; });
           res.on('end', () => {
@@ -155,7 +169,48 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
             const parsedData = JSON.parse(rawData);
             console.log(parsedData);
             console.log(parsedData.v);
-            if(parsedData.v > 1){
+              if(parsedData.v > 1500){ 
+                //parsedData.v might need to be thrown into a calculator to tell us if the value is good or bad 
+                sendGoogleResponse('You have been drinking, be careful and don\'t drive'); 
+              } else {
+                sendGoogleResponse('You are sober!');
+              }  
+          });
+        }); //Repeat changes for the else case
+      } else {
+        https.get(optionsChannel1, (res) => {
+            var rawData = '';
+            res.on('data', (chunk) => { rawData += chunk; });
+            res.on('end', () => {
+              console.log(rawData);
+              rawData = rawData.replace('[','');
+              rawData = rawData.replace(']','');
+              const parsedData = JSON.parse(rawData);
+              console.log(parsedData);
+              console.log(parsedData.v);
+                if(parsedData.v > 1500){
+                  sendResponse('You have been drinking, be careful and don\'t drive');
+                } else {
+                  sendResponse('You are sober!');
+                }
+            });
+          });
+      }
+    },
+    'input.carbon': () => { //Under Construction!!!
+      //Carbon will probably just be a boolean for safe/unsafe
+       if (requestSource === googleAssistantRequest) {
+        https.get(optionsChannel2, (res) => {
+          var rawData = '';
+          res.on('data', (chunk) => { rawData += chunk; });
+          res.on('end', () => {
+            console.log(rawData);
+            rawData = rawData.replace('[','');
+            rawData = rawData.replace(']','');
+            const parsedData = JSON.parse(rawData);
+            console.log(parsedData);
+            console.log(parsedData.v);
+            if(parsedData.v > 7500){
               sendGoogleResponse('Your home has a dangerous amount of Carbon Monoxide!'); 
             } else {
               sendGoogleResponse('The level of Carbon Monoxide in your home is safe.');
@@ -163,7 +218,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
           });
         });
       } else {
-        https.get(optionsChannel3, (res) => {
+        https.get(optionsChannel2, (res) => {
           var rawData = '';
           res.on('data', (chunk) => { rawData += chunk; });
           res.on('end', () => {
@@ -173,7 +228,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
             const parsedData = JSON.parse(rawData);
             console.log(parsedData);
             console.log(parsedData.v);
-            if(parsedData.v > 1){
+            if(parsedData.v > 7500){
               sendResponse('Your home has a dangerous amount of Carbon Monoxide!'); 
             } else {
               sendResponse('The level of Carbon Monoxide in your home is safe.');
@@ -234,8 +289,8 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
             const parsedData = JSON.parse(rawData);
             console.log(parsedData);
             console.log(parsedData.v);
-            if(parsedData.v < 1){ // Needs to be changed!!!
-              sendGoogleResponse('Your home is totally smoke free!'); // Send simple response to user
+            if(parsedData.v < 750){ // Needs to be changed!!!
+              sendGoogleResponse('Your home is smoke free!'); // Send simple response to user
             }else{
               sendGoogleResponse('Your home is currently smoking. You should contact authorities!'); // Send simple response to user
             }
@@ -252,7 +307,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
             const parsedData = JSON.parse(rawData);
             console.log(parsedData);
             console.log(parsedData.v);
-            if(parsedData.v < 1){ // Needs to be changed!!!
+            if(parsedData.v < 750){ // Needs to be changed!!!
               sendResponse('Your home is smoke free!'); // Send simple response to user
             }else{
               sendResponse('Your home is currently smoking. You should contact authorities!'); // Send simple response to user
@@ -264,7 +319,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
      'input.temp': () => { //Under Construction!!!
       //Will probably have to derive the temp from the combo sensor
       //Alternative, combine them
-      https.get(optionsChannel2, (res) => {
+      https.get(optionsChannel3, (res) => {
         var rawData = '';
         res.on('data', (chunk) => { rawData += chunk; });
         res.on('end', () => {
@@ -277,9 +332,9 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
           //calculate the temp from the combo sensor reading 
           let temp = parsedData.v;
           if(requestSource === googleAssistantRequest){
-            sendGoogleResponse('The current house temperature is: '+temp+'.'); // Send simple response to user
+            sendGoogleResponse('The current house temperature is: '+temp+' degrees Celcius.'); // Send simple response to user
           }else{
-            sendResponse('The current house temperature is: '+temp+'.');
+            sendResponse('The current house temperature is: '+temp+' degrees Celcius.');
           }    
         });
       });
@@ -287,7 +342,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
     'input.humidity': () => { //Under Construction!!!
       //Will probably have to derive the humidity from the combo sensor
       //Alternative, combine them
-      https.get(optionsChannel2, (res) => {
+      https.get(optionsChannel4, (res) => {
         var rawData = '';
         res.on('data', (chunk) => { rawData += chunk; });
         res.on('end', () => {
@@ -299,10 +354,11 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
           console.log(parsedData.v);
           //calculate the humidity from the combo sensor reading
           let humidity = parsedData.v;
+          //let humidity = '22%';
           if(requestSource === googleAssistantRequest){
-            sendGoogleResponse('The current house humidity is: '+humidity+'.'); // Send simple response to user
+            sendGoogleResponse('The current house humidity is: '+humidity+' percent.'); // Send simple response to user
           }else{
-            sendResponse('The current house humidity is: '+humidity+'.');
+            sendResponse('The current house humidity is: '+humidity+' percent.');
           }    
         });
       });
